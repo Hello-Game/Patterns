@@ -327,6 +327,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76191720}
   m_CullTransparentMesh: 1
+--- !u!1 &566313349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566313351}
+  - component: {fileID: 566313350}
+  m_Layer: 0
+  m_Name: WeatherInformer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &566313350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566313349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f161187a109cb0d4db1e2c41f73229ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &566313351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566313349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 485.641, y: 231.45126, z: -8.719258}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &840615694
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +611,7 @@ GameObject:
   - component: {fileID: 990271826}
   - component: {fileID: 990271828}
   - component: {fileID: 990271827}
+  - component: {fileID: 990271829}
   m_Layer: 5
   m_Name: WindPanel
   m_TagString: Untagged
@@ -632,6 +677,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990271825}
   m_CullTransparentMesh: 1
+--- !u!114 &990271829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990271825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e171bf7a71de74478d4332bccebb0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1161117488
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +940,7 @@ GameObject:
   - component: {fileID: 1667903817}
   - component: {fileID: 1667903816}
   m_Layer: 5
-  m_Name: WindPanel (1)
+  m_Name: HumidityPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1050,6 +1107,7 @@ GameObject:
   - component: {fileID: 2011678418}
   - component: {fileID: 2011678420}
   - component: {fileID: 2011678419}
+  - component: {fileID: 2011678421}
   m_Layer: 5
   m_Name: TempPanel
   m_TagString: Untagged
@@ -1115,6 +1173,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011678417}
   m_CullTransparentMesh: 1
+--- !u!114 &2011678421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011678417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca072a9f621c34349979745a69ec7e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1123,3 +1193,4 @@ SceneRoots:
   - {fileID: 840615696}
   - {fileID: 1360905673}
   - {fileID: 32300401}
+  - {fileID: 566313351}
